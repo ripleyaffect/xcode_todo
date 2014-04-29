@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E98F4D2918F77ACA006C9225 /* TRPCreateTodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98F4D2818F77ACA006C9225 /* TRPCreateTodoViewController.m */; };
 		E9A0F0BF18EE315B00966DCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A0F0BE18EE315B00966DCD /* Foundation.framework */; };
 		E9A0F0C118EE315B00966DCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A0F0C018EE315B00966DCD /* CoreGraphics.framework */; };
 		E9A0F0C318EE315B00966DCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A0F0C218EE315B00966DCD /* UIKit.framework */; };
@@ -19,6 +20,7 @@
 		E9A0F0DA18EE315B00966DCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A0F0C218EE315B00966DCD /* UIKit.framework */; };
 		E9A0F0E218EE315B00966DCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9A0F0E018EE315B00966DCD /* InfoPlist.strings */; };
 		E9A0F0E418EE315B00966DCD /* TodoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0F0E318EE315B00966DCD /* TodoListTests.m */; };
+		E9A0F0EF18EE32BE00966DCD /* TRPTodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0F0EE18EE32BE00966DCD /* TRPTodoListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E98F4D2718F77ACA006C9225 /* TRPCreateTodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPCreateTodoViewController.h; sourceTree = "<group>"; };
+		E98F4D2818F77ACA006C9225 /* TRPCreateTodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPCreateTodoViewController.m; sourceTree = "<group>"; };
 		E9A0F0BB18EE315B00966DCD /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A0F0BE18EE315B00966DCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9A0F0C018EE315B00966DCD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +52,8 @@
 		E9A0F0DF18EE315B00966DCD /* TodoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoListTests-Info.plist"; sourceTree = "<group>"; };
 		E9A0F0E118EE315B00966DCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9A0F0E318EE315B00966DCD /* TodoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListTests.m; sourceTree = "<group>"; };
+		E9A0F0ED18EE32BE00966DCD /* TRPTodoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPTodoListViewController.h; sourceTree = "<group>"; };
+		E9A0F0EE18EE32BE00966DCD /* TRPTodoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPTodoListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,10 @@
 		E9A0F0B218EE315B00966DCD = {
 			isa = PBXGroup;
 			children = (
+				E9A0F0ED18EE32BE00966DCD /* TRPTodoListViewController.h */,
+				E9A0F0EE18EE32BE00966DCD /* TRPTodoListViewController.m */,
+				E98F4D2718F77ACA006C9225 /* TRPCreateTodoViewController.h */,
+				E98F4D2818F77ACA006C9225 /* TRPCreateTodoViewController.m */,
 				E9A0F0C418EE315B00966DCD /* TodoList */,
 				E9A0F0DD18EE315B00966DCD /* TodoListTests */,
 				E9A0F0BD18EE315B00966DCD /* Frameworks */,
@@ -242,6 +252,8 @@
 			files = (
 				E9A0F0CB18EE315B00966DCD /* main.m in Sources */,
 				E9A0F0CF18EE315B00966DCD /* TRPAppDelegate.m in Sources */,
+				E9A0F0EF18EE32BE00966DCD /* TRPTodoListViewController.m in Sources */,
+				E98F4D2918F77ACA006C9225 /* TRPCreateTodoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +450,7 @@
 				E9A0F0E918EE315B00966DCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9A0F0EA18EE315B00966DCD /* Build configuration list for PBXNativeTarget "TodoListTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +459,7 @@
 				E9A0F0EC18EE315B00966DCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

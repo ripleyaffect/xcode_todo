@@ -7,13 +7,17 @@
 //
 
 #import "TRPAppDelegate.h"
+#import "TRPTodoListViewController.h"
+#import "TRPCreateTodoViewController.h"
 
 @implementation TRPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    TRPTodoListViewController *viewController = [[TRPTodoListViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
